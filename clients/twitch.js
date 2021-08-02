@@ -10,8 +10,7 @@ const log = console.log;
 require("dotenv").config();
 
 const client = new ChatClient({
-    username: process.env.TWITCH_USER,
-    password: process.env.TWITCH_OAUTH,
+    username: "justinfan12345",
     rateLimits: "default",
     ignoreUnhandledPromiseRejections: true,
 });
@@ -26,14 +25,12 @@ client.use(new UserStateTracker(client));
 client.use(new SlowModeRateLimiter(client, 2));
 
 client.initialize = async () => {
-    await client.join("nouryqt");
+    await client.joinAll("nouryqt", "noemience", "elajjaz", "pajlada", "zneix");
     await client.connect();
 };
 
 client.on("ready", () => {
     log(chalk.bold.green("[TWITCH] Successfully connected to chat"));
-
-    client.say("nouryqt", "FeelsDankMan");
 });
 
 client.on("close", (error) => {

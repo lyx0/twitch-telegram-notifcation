@@ -25,7 +25,11 @@ client.use(new UserStateTracker(client));
 client.use(new SlowModeRateLimiter(client, 2));
 
 client.initialize = async () => {
-    await client.joinAll("nouryqt", "noemience", "elajjaz", "pajlada", "zneix");
+    await client.join("nouryqt");
+    await client.join("noemience");
+    await client.join("elajjaz");
+    await client.join("pajlada");
+    await client.join("zneix");
     await client.connect();
 };
 

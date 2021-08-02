@@ -44,7 +44,7 @@ client.on("close", (error) => {
 });
 
 client.on("PRIVMSG", (msg) => {
-    log(chalk.white(`[TWITCH] [#${msg.channelName}] ${msg.displayName}: ${msg.messageText}`));
+    // log(chalk.white(`[TWITCH] [#${msg.channelName}] ${msg.displayName}: ${msg.messageText}`));
 });
 
 module.exports = client;

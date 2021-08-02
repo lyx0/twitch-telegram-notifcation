@@ -10,7 +10,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
     const chatId = msg.chat.id;
     const resp = match[1];
 
-    console.log(chatId);
+    // console.log(chatId);
     bot.sendMessage(chatId, resp);
 });
 

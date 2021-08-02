@@ -1,0 +1,26 @@
+{
+    "name": "twitch-telegram-notifcation",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lyx0/twitch-telegram-notifcation.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lyx0/twitch-telegram-notifcation/issues"
+    },
+    "homepage": "https://github.com/lyx0/twitch-telegram-notifcation#readme",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "dank-twitch-irc": "^4.3.0",
+        "dotenv": "^10.0.0",
+        "node-telegram-bot-api": "^0.54.0"
+    }
+}
